@@ -1,0 +1,14 @@
+The is a text conference application.
+Use make to compile server.c and client.c.
+currently 3 users are hardcoded into code section:
+username: aaa , password: 123
+username: bbb , password: 123
+username: ccc , password: 123
+
+To reduce overhead, the maximum character a message can contain is 255.
+The maximum number of session can exist is 10.
+
+Additional function added is the invitation function.
+Command to invite: /invite username
+Command to accept the invite: /accept
+Command to reject the invite: /reject

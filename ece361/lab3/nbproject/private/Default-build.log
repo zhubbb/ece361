@@ -1,0 +1,12 @@
+gcc client.c -o client
+gcc -std=c99 server.c -o server
+server.c: In function 'create_server_socket':
+server.c:47:6: warning: implicit declaration of function 'bzero' [-Wimplicit-function-declaration]
+      bzero((char *) &serv_addr, sizeof(serv_addr));
+      ^~~~~
+server.c: In function 'main':
+server.c:99:21: error: storage size of 'hints' isn't known
+     struct addrinfo hints, *servinfo, *p;
+                     ^~~~~
+Makefile:2: recipe for target 'all' failed
+make: *** [all] Error 1
